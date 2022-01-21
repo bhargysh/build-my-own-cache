@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run build",
     "exec": "node dist/index.js",
-    "test": "jest"
+    "test": "jest --detectOpenHandles"
   },
   "repository": {
     "type": "git",

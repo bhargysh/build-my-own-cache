@@ -12,6 +12,7 @@ export class BhargCache {
         this.timeToLive = timeToLive
         this.maxItems = maxItems
         this.map = map
+        // this.clear()
     }
 
     add(key: string, value: string[]): void {
@@ -33,5 +34,9 @@ export class BhargCache {
 
     remove(key: string): void {
         this.map.delete(key)
+    }
+
+    clear() {
+        setTimeout(() => this.map.clear(), this.timeToLive)
     }
 }

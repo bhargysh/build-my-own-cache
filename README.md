@@ -18,7 +18,7 @@
 ```typescript
 // TTL = 60 seconds
 // Max items = 5
-const cache = new BhargCache(60, 5)
+const cache = new BhargCache(10, 5, new Map())
 
 cache.add('alana', ['ice cream', 'nutella'])
 cache.add('bob', ['mozarella', 'pizza'])
