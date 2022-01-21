@@ -20,18 +20,18 @@
 // Max items = 5
 const cache = new BhargCache(60, 5)
 
-cache.add({
-    'alana': ['ice cream', 'nutella'],
-    'bob': ['mozarella', 'pizza'],
-    'cardi': ['burgers', 'milkshakes'],
-    'daniel': ['yoghurt', 'smoothies'],
-    'emmanual': ['cherries', 'pies'],
-    'fernando': ['chips'],
-})
+cache.add('alana', ['ice cream', 'nutella'])
+cache.add('bob', ['mozarella', 'pizza'])
+cache.add('cardi', ['burgers', 'milkshakes'])
+cache.add('daniel', ['yoghurt', 'smoothies'])
+cache.add('emmanual', ['cherries', 'pies'])
+cache.add('fernando', ['chips'])
 cache.size()
+
 cache.get('alana')
 cache.get('fernando')
 cache.size()
+
 cache.remove('alana')
 cache.size()
 ```
